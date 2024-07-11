@@ -4,10 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>ZEMUTECHNOLOGIES</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -25,6 +22,12 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+img {
+    max-width: 100%;
+    height: auto;
+}
+    </style>
 
     
 </head>
@@ -35,10 +38,10 @@
         <div class="row bg-secondary py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-inline-flex align-items-center h-100">
-                    <a class="text-body mr-3" href="">About</a>
-                    <a class="text-body mr-3" href="">Contact</a>
-                    <a class="text-body mr-3" href="">Help</a>
-                    <a class="text-body mr-3" href="">FAQs</a>
+                    <a href="about.html" class="text-body mr-3" href="">About</a>
+                    <a href="contact.html" class="text-body mr-3" href="">Contact</a>
+                    <a href="help.html" class="text-body mr-3" href="">Help</a>
+                    <a href="faqs.html" class="text-body mr-3" href="">FAQs</a>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -83,17 +86,18 @@
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-left">
-                <form action="">
+                <form id="searchForm" action="/search" method="GET">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
+                        <input type="text" class="form-control" name="query" placeholder="Search for products">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                            <button type="submit" class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
+            
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Customer Service</p>
                 <h5 class="m-0">+254 715059900</h5>
@@ -211,7 +215,7 @@
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Mobile Accessories</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Express yourself! Find the perfect mobile accessories to match your style and keep your phone functional.</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                                 </div>
                             </div>
@@ -221,7 +225,7 @@
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Alternative Power Solutions</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Beat the energy bills! Go solar with our efficient panels and keep your home powered affordably.</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                                 </div>
                             </div>
@@ -231,7 +235,7 @@
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div class="p-3" style="max-width: 700px;">
                                     <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Home Products</h1>
-                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn"> Discover the perfect TV and lighting to match your style and needs. Browse our extensive collection and find everything you need to create your dream home.</p>
                                     <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Shop Now</a>
                                 </div>
                             </div>
@@ -292,122 +296,6 @@
         </div>
     </div>
     <!-- Featured End -->
-
-
-    <!-- Categories Start -->
-    <div class="container-fluid pt-5">
-        <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">Categories</span></h2>
-        <div class="row px-xl-5 pb-3">
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-1.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Solar Power</h6>
-                            <small class="text-body">70 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-2.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Phone Accessories</h6>
-                            <small class="text-body">80 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-3.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Speakers</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-4.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Television</h6>
-                            <small class="text-body">50 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/battery.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Automotive Power</h6>
-                            <small class="text-body">20 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-6.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Laptops</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/cat-5.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Lighting</h6>
-                            <small class="text-body">10 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item img-zoom d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="img/camera.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>CCTV cameras</h6>
-                            <small class="text-body">30 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Categories End -->
 
 
     <!-- Products Start -->
@@ -900,7 +788,7 @@
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
+                <p class="mb-4">Get in touch with us by  contacting us below. We'd love to hear from you!</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Nairobi</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>zemutechnologies@gmail.com</p>
                 <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+254 715059900</p>
@@ -920,7 +808,7 @@
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                        <p>Subscribe to our Email alerts for the latest products and discounts</p>
                         <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Your Email Address">
@@ -932,9 +820,10 @@
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
                         <div class="d-flex">
                             <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" target="_blank" href="https://www.facebook.com/profile.php?id=61557747806013&__cft__[0]=AZW2ouJghOh7gAX6U9uX34FFbOt3eQW8YUI8G1l9qSkRD_b5xPR_9CH2BSYKU7yWWoIccS8h9dZhSThRPvtewlUluemDZn25C1kg2_hXy1dL1JOK0ZJp0CJfkp_90bdJNiR4fL1gWzBr7TIgKaT3ZYn7r3fWsFvwVEJ5TOY_mbjQ6UCfu2sWvicbS6D6kll1gATpYvzDg8KS22bfjUk_Tltt6tvDmdMbTwLHKN0ZKg5BlQ&__tn__=-]C%2CP-R"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" target="_blank" href="https://www.tiktok.com/@zemutechnologies?is_from_webapp=1&sender_device=pc"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square" target="_blank" href="https://www.tiktok.com/@zemutechnologies?is_from_webapp=1&sender_device=pc"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square" target="_blank" href="https://wa.me/+254715059900"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
