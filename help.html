@@ -28,10 +28,9 @@
         <div class="row bg-secondary py-1 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
                 <div class="d-inline-flex align-items-center h-100">
-                    <a class="text-body mr-3" href="">About</a>
-                    <a class="text-body mr-3" href="">Contact</a>
-                    <a class="text-body mr-3" href="">Help</a>
-                    <a class="text-body mr-3" href="">FAQs</a>
+                    <a href="about.html" class="text-body mr-3" href="">About</a>
+                    <a href="help.html" class="text-body mr-3" href="">Help</a>
+                    <a href="faqs.html" class="text-body mr-3" href="">FAQs</a>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -76,17 +75,18 @@
                 </a>
             </div>
             <div class="col-lg-4 col-6 text-left">
-                <form action="">
+                <form id="searchForm" action="/search" method="GET">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
+                        <input type="text" class="form-control" name="query" placeholder="Search for products">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                            <button type="submit" class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </form>
             </div>
+            
             <div class="col-lg-4 col-6 text-right">
                 <p class="m-0">Customer Service</p>
                 <h5 class="m-0">+254 715059900</h5>
@@ -94,6 +94,7 @@
         </div>
     </div>
     <!-- Topbar End -->
+
 
 
     <!-- Navbar Start -->
@@ -129,8 +130,8 @@
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
                     <a href="" class="text-decoration-none d-block d-lg-none">
-                        <span class="h1 text-uppercase text-dark bg-light px-2">Multi</span>
-                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span>
+                        <span class="h1 text-uppercase text-dark bg-light px-2">Zemu</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Tech</span>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -238,7 +239,7 @@
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
-                <p class="mb-4">Get in touch with us by  contacting us below. We'd love to hear from you!</p>
+                <p class="mb-4"></p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Nairobi</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>zemutechnologies@gmail.com</p>
                 <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+254 715059900</p>
@@ -258,7 +259,7 @@
                     </div>
                     <div class="col-md-4 mb-5">
                         <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
-                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                        <p>Subscribe to our Email alerts for the latest products and discounts</p>
                         <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Your Email Address">
@@ -270,9 +271,10 @@
                         <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
                         <div class="d-flex">
                             <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" target="_blank" href="https://www.facebook.com/profile.php?id=61557747806013&__cft__[0]=AZW2ouJghOh7gAX6U9uX34FFbOt3eQW8YUI8G1l9qSkRD_b5xPR_9CH2BSYKU7yWWoIccS8h9dZhSThRPvtewlUluemDZn25C1kg2_hXy1dL1JOK0ZJp0CJfkp_90bdJNiR4fL1gWzBr7TIgKaT3ZYn7r3fWsFvwVEJ5TOY_mbjQ6UCfu2sWvicbS6D6kll1gATpYvzDg8KS22bfjUk_Tltt6tvDmdMbTwLHKN0ZKg5BlQ&__tn__=-]C%2CP-R"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" target="_blank" href="https://www.tiktok.com/@zemutechnologies?is_from_webapp=1&sender_device=pc"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square" target="_blank" href="https://www.tiktok.com/@zemutechnologies?is_from_webapp=1&sender_device=pc"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square" target="_blank" href="https://wa.me/+254715059900"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -280,7 +282,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>

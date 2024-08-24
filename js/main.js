@@ -102,3 +102,95 @@
     
 })(jQuery);
 
+   //product_interaction
+    // Function to handle add to cart
+        function addToCart(productId) {
+            // Example: Adding to a local storage cart
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ productId: productId, quantity: 1 });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            console.log("Product " + productId + " added to cart.");
+        
+            alert("Product added to cart!");
+            // Update the badge count
+            updateBadgeCounts();
+        }
+        
+
+        // Function to handle add to wishlist
+        function addToWishlist(productId) {
+            // Example: Adding to a local storage wishlist
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            if (!wishlist.includes(productId)) {
+                wishlist.push(productId);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                console.log("Product " + productId + " added to wishlist.");
+                alert("Product added to wishlist!");
+            } else {
+                console.log("Product " + productId + " is already in the wishlist.");
+                alert("Product is already in your wishlist.");
+            }
+        
+            // Update the badge count
+            updateBadgeCounts();
+        }
+        
+
+        // Function to handle view details
+        function viewDetails(productId) {
+            console.log("Viewing details for product " + productId);
+            //redirect to product page
+            window.location.href = "product-details.html?product_id=" + productId;
+        }
+
+        // Add event listeners to buttons
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", function() {
+                    addToCart(this.getAttribute("data-product-id"));
+                });
+            });
+
+            document.querySelectorAll(".add-to-wishlist").forEach(button => {
+                button.addEventListener("click", function() {
+                    addToWishlist(this.getAttribute("data-product-id"));
+                });
+            });
+
+            document.querySelectorAll(".view-details").forEach(button => {
+                button.addEventListener("click", function() {
+                    viewDetails(this.getAttribute("data-product-id"));
+                });
+            });
+        });
+    //updatebadgecount
+        function updateBadgeCounts() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+        
+            document.getElementById('cart-count').textContent = cart.length;
+            document.getElementById('wishlist-count').textContent = wishlist.length;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            updateBadgeCounts();  // Initial badge count update
+        
+            document.querySelectorAll(".add-to-cart").forEach(button => {
+                button.addEventListener("click", function() {
+                    addToCart(this.getAttribute("data-product-id"));
+                });
+            });
+        
+            document.querySelectorAll(".add-to-wishlist").forEach(button => {
+                button.addEventListener("click", function() {
+                    addToWishlist(this.getAttribute("data-product-id"));
+                });
+            });
+        
+            document.querySelectorAll(".view-details").forEach(button => {
+                button.addEventListener("click", function() {
+                    viewDetails(this.getAttribute("data-product-id"));
+                });
+            });
+        });
+        
